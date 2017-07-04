@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Szafirowy Smok Projekt-06</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wyszukiwarka krajów</h1>
+      <input id="country-name" type="text">
+      <button id="search">Szukaj</button>
+      <div id="countries">
+        <h2>Nazwa kraju</h2>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Stolica</th>
+              <th>Powierzchnia</th>
+              <th>Liczba mieszkańców</th>
+              <th>Region świata</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="capital"></td>
+              <td id="area"></td>
+              <td id="population"></td>
+              <td id="region"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>

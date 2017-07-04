@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {
+	box-sizing:border-box;
+}
+body {
+    background: url('https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center/cover;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+.container {
+    width: 700px;
+    margin: 300px auto 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+button, input  {
+    width: 100px;
+    padding: 7px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    background: #010617;
+    color: #fff;
+    margin: 10px;
+}
+input {
+    width: 180px;
+    background: none;
+    color: #fff;
+    cursor: default;
+}
+table {
+    margin: 30px auto;
+    padding: 5px;
+    text-align: center;
+    width: 600px;
+    min-height: 90px;
+    border-collapse: collapse;
+}
+th {
+    border-bottom: 2px solid #fff;
+}
+th, td {
+    padding: 10px;
+    font-size: 1.1em;
+}
