@@ -1,14 +1,17 @@
 $(document).ready(function(){
     //hamburger menu for phone	
-	$("#logo").after('<div id="menu">&#9776;</div>');
-    $("#menu").click(function() {
-        $("#hamburger-nav").show();
-    });
-    $("#hamburger-nav li").click(function (){
-        $("#hamburger-nav").hide();
-    });
+	
     $(window).resize(function(){
-        if(window.innerWidth > 768) {
+        if(window.innerWidth < 768) {
+            $("#logo").after('<div id="menu">&#9776;</div>');
+            $("#menu").click(function() {
+                $("#hamburger-nav").show();
+            });
+            $("#hamburger-nav li").click(function (){
+                $("#hamburger-nav").hide();
+            });  
+        }
+        else {
             $("#hamburger-nav").removeAttr("style");
         }
     });

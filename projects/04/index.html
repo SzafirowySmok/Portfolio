@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Tytuł strony </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="container">
+      <h2>Witaj w grze</h2>
+        <div class="game">
+          <button class="btn-rock">Kamień</button>
+          <button class="btn-paper">Papier</button>
+          <button class="btn-scissors">Nożyce</button>
+        </div>
+    </header>
+    <div id="js-newGameElement" class="container">
+      <div class="row">
+        <h3>Zasady gry</h3>
+        <p>W każdej rundzie wybierasz jeden z trzech symboli: kamień, papier, nożyce.<br> Jeżeli komputer wybierze tą samą opcję jest remis.<br> W przeciwnym wypadku wygrywa ten kto ma silniejszy symbol, zgodnie z hierarchą:<br>Nożyce są silniejsze od papieru, ponieważ go tną<br>Kamień jest silniejszy od nożyc, ponieważ je tępi<br>Papier jest silniejszy od kamienia, ponieważ go owija<br>Wygrywa ten kto zdobędzie pierwszy 10 punktów.</p>
+        <button id="js-newGameButton" class="btn-game">Nowa Gra</button>
+      </div>
+    </div>
+    <div id="js-playerPickElement" class="container text-center">
+      <img src="images/kamien.png" alt="kamień" id="js-playerPick_rock">      
+      <img src="images/papier.png" alt="papier" id="js-playerPick_paper">
+      <img src="images/nozyce.png" alt="nożyce" id="js-playerPick_scissors">
+    </div>
+    <div id="js-resultsTableElement" class="container">
+      <div class="row">
+        <div class="col-xs-5">
+          <h3 id="js-playerName">Imię gracza</h3>
+          <span id="js-playerPoints" class="badge">0</span>
+        </div>
+        <div class="col-xs-2">
+          <h3>VS.</h3>
+        </div>
+        <div class="col-xs-5">
+          <h3>Komputer</h3>
+          <span id="js-computerPoints" class="badge">0</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-5">
+          <span id="js-playerPick">Wybór gracza</span>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-5">
+          <span id="js-computerPick">Wybór komputera</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-5">
+          <span id="js-playerResult">Wynik gracza</span>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-5">
+          <span id="js-computerResult">Wynik komputera</span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>

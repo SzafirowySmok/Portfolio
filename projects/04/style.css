@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    font-size: 16px;
+}
+header {
+    margin: 50px auto 20px;
+}
+.row {
+    margin: 10px auto;
+}
+.game button {
+    cursor: default;
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-rock {
+    background-color: #800000;
+    border: 2px solid #800000;
+}
+.btn-paper {
+    background-color: #000080;
+    border: 2px solid #000080;
+}
+.btn-scissors {
+    background-color: #007D00;
+    border: 2px solid #007D00;
+}
+.btn-game {
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    margin: 50px;
+    width: 120px;
+    height: 40px;
+}
+#js-playerPickElement {
+    margin-bottom: 50px;
+}
+#js-playerPickElement img {
+    margin: 10px;
+    cursor: pointer;
+}
+#js-resultsTableElement {
+    font-size: 18px;
+}
+#js-playerResult, #js-computerResult {
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: bold;
+}
