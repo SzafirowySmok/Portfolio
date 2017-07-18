@@ -1,50 +1,100 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-* {
-	box-sizing:border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Fresca|Kalam:400,700&subset=latin-ext');
+
 body {
-    background: url('https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center/cover;
-    font-family: 'Lato', sans-serif;
-    color: #fff;
-    margin: 0;
+    font-family: 'Fresca', sans-serif;
 }
-.container {
-    width: 700px;
-    margin: 300px auto 0;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
+h1, h2 {
+    font-family: 'Kalam', cursive;
 }
-button, input  {
-    width: 100px;
-    padding: 7px;
-    font-size: 0.9em;
-    font-weight: bold;
+button {
+    font-family: 'Kalam';
+    font-size: 16px !important;
     cursor: pointer;
-    border: 1px solid lightblue;
+    background-color: #eee;
+    border: 1px solid #9e9e9e;
     border-radius: 5px;
-    background: #010617;
-    color: #fff;
-    margin: 10px;
+    color: #616161;
+    font-weight: bold;
 }
-input {
-    width: 180px;
-    background: none;
-    color: #fff;
-    cursor: default;
+.board {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-table {
-    margin: 30px auto;
-    padding: 5px;
-    text-align: center;
-    width: 600px;
-    min-height: 90px;
-    border-collapse: collapse;
-}
-th {
-    border-bottom: 2px solid #fff;
-}
-th, td {
+.create-column {
+    width: 150px;
     padding: 10px;
-    font-size: 1.1em;
+    margin-bottom: 20px;
+    background-color: #eee;
+    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+    font-family: 'Kalam';
+    font-size: 16px;
+}
+.create-column:hover, .add-card:hover {
+    background-color: #9e9e9e;
+    color: #fffd90;
+}
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column {
+    background-color: #eee;
+    margin: 5px;
+    border: 1px solid #9e9e9e;
+    box-shadow: 0px 0px 15px #e0e0e0;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+.column .column-title {
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #9e9e9e;
+    margin: 0;
+    padding: 12px;
+    min-width: 50px;
+}
+.column > .btn-delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16x;
+    line-height: 16px;
+    padding: 0;
+    border: none;
+    background-color: #e0e0e0;
+}
+.column .add-card {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+}
+.column-card-list {
+    list-style-type: none;
+    min-height: 20px;
+    padding: 0;
+}
+.card {
+    margin: 5px;
+    padding: 5px;
+    background-color: #fffd90;
+    border: 1px solid #fffd90;
+    box-shadow: 0px 0px 15px #9e9e9e;
+    border-radius: 5px;
+}
+.card > .btn-delete {
+    float: right;
+    width: 15px;
+    height: 15x;
+    line-height: 15px;
+    padding: 0;
+    border: none;
+    background-color: #fffd90;
 }

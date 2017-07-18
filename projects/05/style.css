@@ -1,66 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Fresca|Kalam:400,700&subset=latin-ext');
-
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {
+	box-sizing:border-box;
+}
 body {
-    font-family: 'Fresca', sans-serif;
+    background: url('https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center/cover;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    margin: 0;
 }
-h1, h2 {
-    font-family: 'Kalam', cursive;
-}
-.board {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.column-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.column {
-    background-color: lightblue;
-    margin: 10px;
-    width: 300px;
+.container {
+    width: 700px;
+    margin: 300px auto 0;
     text-align: center;
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
 }
-.column > .btn-delete {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15x;
-    line-height: 15px;
-    padding: 0;
-    background-color: inherit;
-    border: none;
+button, input  {
+    width: 100px;
+    padding: 7px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    background: #010617;
+    color: #fff;
+    margin: 10px;
 }
-.column-card-list {
-    list-style-type: none;
-    min-height: 20px;
-    
+input {
+    width: 180px;
+    background: none;
+    color: #fff;
+    cursor: default;
 }
-.card {
-    background-color: lightcoral;
-    margin: 5px 5px 5px -35px;
-    padding: 0;
-    border: 2px solid lightcoral;
+table {
+    margin: 30px auto;
+    padding: 5px;
+    text-align: center;
+    width: 600px;
+    min-height: 90px;
+    border-collapse: collapse;
 }
-.card > .btn-delete {
-    float: right;
-    width: 15px;
-    height: 15x;
-    line-height: 15px;
-    padding: 0;
-    background-color: lightpink;
-    border: 2px solid lightpink;
+th {
+    border-bottom: 2px solid #fff;
 }
-/*darkgrey #616161
-#757575
-#9E9E9E
-#BDBDBD
-#E0E0E0
-#EEEEEE
-lighgrey #F5F5F5*/
+th, td {
+    padding: 10px;
+    font-size: 1.1em;
+}

@@ -1,39 +1,21 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Szafirowy Smok Projekt-06</title>
+    <title> Tablica kanban</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Wyszukiwarka krajów</h1>
-      <input id="country-name" type="text">
-      <button id="search">Szukaj</button>
-      <div id="countries">
-        <h2>Nazwa kraju</h2>
-      </div>
-      <div>
-        <table>
-          <thead>
-            <tr>
-              <th>Stolica</th>
-              <th>Powierzchnia</th>
-              <th>Liczba mieszkańców</th>
-              <th>Region świata</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="capital"></td>
-              <td id="area"></td>
-              <td id="population"></td>
-              <td id="region"></td>
-            </tr>
-          </tbody>
-        </table>
+    <div id="board" class="board">
+      <h1>Tablica kanban</h1>
+      <button class="create-column">Dodaj kolumnę</button>
+      <div class="column-container">
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+    integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+    crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>

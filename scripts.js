@@ -1,6 +1,5 @@
 $(document).ready(function(){
     //hamburger menu for phone	
-	
     $(window).resize(function(){
         if(window.innerWidth < 768) {
             $("#logo").after('<div id="menu">&#9776;</div>');
@@ -37,7 +36,6 @@ $(document).ready(function(){
             }
         );
     });
-    
     $('.project').each(function() {
         $(this).hover(
             function() {
@@ -58,5 +56,4 @@ $(document).ready(function(){
             },1000);
         });
     });
-    
 });
