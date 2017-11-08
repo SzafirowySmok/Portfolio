@@ -326,8 +326,8 @@ footer {
     #portfolio .container .gallery .project {
       width: 80%; }
       #portfolio .container .gallery .project .layer {
-        height: 40%;
-        top: 30%;
+        height: 70%;
+        top: 15%;
         background-color: rgba(8, 37, 103, 0.8);
         padding: 10px; }
         #portfolio .container .gallery .project .layer i.fa {

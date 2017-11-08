@@ -2,11 +2,10 @@ $(document).ready(function(){
     //hamburger menu for phone	
     $(window).resize(function(){
         if(window.innerWidth < 768) {
-            $("#logo").after('<div id="menu">&#9776;</div>');
             $("#menu").click(function() {
                 $("#hamburger-nav").show();
             });
-            $("#hamburger-nav li").click(function (){
+            $("#hamburger-nav li").click(function(){
                 $("#hamburger-nav").hide();
             });  
         }
@@ -39,10 +38,10 @@ $(document).ready(function(){
     $('.project').each(function() {
         $(this).hover(
             function() {
-                $(this).children('.layer').slideDown(1000);
+                $(this).children('.layer').slideDown(1500);
             },
             function() {
-                $(this).children('.layer').slideUp(1000);
+                $(this).children('.layer').slideUp(1500);
             }
         );
     });
